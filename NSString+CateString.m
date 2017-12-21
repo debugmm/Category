@@ -98,7 +98,7 @@
                 result=NSOrderedAscendingAlias;
             }
             
-            stop=(BOOL *)YES;
+            *stop=YES;
         }
     }];
     
