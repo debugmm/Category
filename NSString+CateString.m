@@ -37,7 +37,7 @@
     }
 }
 
-#pragma mark - Expend
+#pragma mark - Extend
 -(NSComparisonResultAlias)versionStringCompare:(NSString *)versionStringB{
     
     __block NSComparisonResultAlias result=NSComparisonOccurError;
