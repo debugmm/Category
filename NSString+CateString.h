@@ -37,7 +37,7 @@ typedef enum NSComparisonResultAlias : NSInteger {
  */
 +(NSString *)stringByTrimmingBothEndWhiteSpace:(NSString *)string;
 
-#pragma mark - Expend
+#pragma mark - Extend
 
 /**
  @Description compare versionString
