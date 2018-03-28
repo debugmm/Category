@@ -105,4 +105,26 @@
     return result;
 }
 
+#pragma mark - about MD5
++(NSString *)generateStringMD5:(nonnull NSString *)string{
+    
+    if([NSString isEmptyString:string]){
+        return @"";
+    }
+    
+    const char *cStr=string.UTF8String;
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    
+    CC_MD5(cStr, (CC_LONG)strlen(cStr), digest);//generate string md5
+    
+    NSMutableString *md5Str=[[NSMutableString alloc] initWithCapacity:CC_MD5_DIGEST_LENGTH];
+    
+    for(int i=0;i<CC_MD5_DIGEST_LENGTH;i++){
+        
+        [md5Str appendFormat:@"%02x",digest[i]];
+    }
+    
+    return md5Str;
+}
+
 @end
