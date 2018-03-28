@@ -50,4 +50,7 @@ typedef enum NSComparisonResultAlias : NSInteger {
  */
 -(NSComparisonResultAlias)versionStringCompare:(NSString *)versionStringB;
 
+#pragma mark - about MD5
++(NSString *)generateStringMD5:(nonnull NSString *)string
+
 @end
