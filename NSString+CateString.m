@@ -6,6 +6,7 @@
 //
 
 #import "NSString+CateString.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (CateString)
 
