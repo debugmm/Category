@@ -18,4 +18,6 @@
 
 -(nullable UIImage *)imageWithTintColor:(nonnull UIColor *)color;
 
+-(nullable UIImage *)imageWithCornerRadius:(CGFloat)radius;
+
 @end
