@@ -30,11 +30,9 @@
 
         //do not using nil,it can give rise to bug.
         return [[NSString alloc] init];
-
-    }else{
-
-        return [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     }
+
+    return [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
 #pragma mark - Extend
