@@ -19,10 +19,9 @@
 
         return NO;
 
-    }else{
-
-        return YES;
     }
+    
+    return YES;
 }
 
 +(NSString *)stringByTrimmingBothEndWhiteSpace:(NSString *)string{
